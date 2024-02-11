@@ -47,5 +47,5 @@ jobs:
         with:
           context: .
           push: true #${{ github.event.base_ref =='refs/heads/main' && github.ref_type == 'tag' && !startsWith(github.ref, 'refs/tags/v0.')}}
-          tags: ${{ steps.metadata.outputs.tags }}
+          tags: virendrasinghrp/qp-assessment:latest#${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
